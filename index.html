@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SVJ Na Padesátém 868/8 a 871/6 – Oficiální stránky</title>
+  <meta name="description" content="Vítejte na oficiálních stránkách SVJ pro dům Na Padesátém 868/8 a 871/6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Horní tmavá navigace -->
+  <nav class="topbar">
+    <div class="container topbar__inner">
+      <a href="#" class="brand" aria-label="SVJ domů">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 11.5L12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8z" stroke="#8cb9ff" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span>SVJ Na Padesátém 868/8 a 871/6</span>
+      </a>
+
+      <button class="burger" aria-label="Menu" aria-expanded="false"
+              onclick="document.body.classList.toggle('nav-open')">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="navlinks">
+        <a href="#uvod">Úvod</a>
+        <a href="#info">Základní informace</a>
+        <a href="#dokumenty">Dokumenty</a>
+        <a href="#kontakty">Kontakty</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- HERO (úvodní pás s titulkem a pravou fotkou) -->
+    <section id="uvod" class="hero">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <h1>Vítejte na oficiálních stránkách SVJ pro dům Na Padesátém 868/8 a 871/6</h1>
+          <p class="lead">Aktuální informace, dokumenty a kontakty na výbor a správu domu.</p>
+        </div>
+        <div class="hero__image" role="img" aria-label="Ilustrační fotografie domu"></div>
+      </div>
+    </section>
+
+    <!-- Dvě sloupce: Aktuality + Základní informace -->
+    <section class="grid-2">
+      <div class="card">
+        <h2 class="section-title">Aktuality (Nástěnka)</h2>
+        <span class="badge">Novinka</span>
+        <article class="post">
+          <h3><strong>Lorem ipsum oznámení — 1. 3. 2025</strong></h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id turpis laoreet bibendum.
+            Phasellus congue, metus vitae cursus gravida, urna lectus dictum nisl, quis malesuada sapien orci nec risus.
+            Integer eget nibh eget metus malesuada dictum.
+          </p>
+        </article>
+      </div>
+
+      <aside id="info" class="panel">
+        <h2 class="section-title">Základní informace</h2>
+        <ul class="kv">
+          <li><span>Společenství vlastníků:</span> Na Padesátém 868/8 a 871/6</li>
+          <li><span>Adresa:</span> Na Padesátém 868/8, 100 00 Praha 10</li>
+          <li><span>IČ:</span> 289 57 792</li>
+          <li><span>Rejstřík SVJ:</span> Městský soud v Praze, oddíl S, vložka 10700</li>
+          <li><span>Bankovní účet:</span> 86888716/2010</li>
+          <li><span>E‑mail SVJ:</span> <a href="mailto:svjnapadesatem@gmail.com">svjnapadesatem@gmail.com</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Tři akční karty: Dokumenty / Výbor & Správce / Kontakty -->
+    <section class="grid-3 cards-row">
+      <a id="dokumenty" class="card card--action" href="#dokumenty-sekce">
+        <div class="icon">📄</div>
+        <div>
+          <h3>Dokumenty ke stažení</h3>
+          <p>Stanovy, domovní řád, zápisy a další.</p>
+        </div>
+      </a>
+
+      <a class="card card--action" href="#vybor">
+        <div class="icon">👥</div>
+        <div>
+          <h3>Výbor & Správce</h3>
+          <p>Kontakty a informace o správě domu.</p>
+        </div>
+      </a>
+
+      <a id="kontakty" class="card card--action" href="#kontakty-sekce">
+        <div class="icon">☎️</div>
+        <div>
+          <h3>Kontakty</h3>
+          <p>Administrativa a technické záležitosti.</p>
+        </div>
+      </a>
+    </section>
+
+    <!-- Výbor + Správce -->
+    <section id="vybor" class="panel">
+      <h2 class="section-title">Výbor SVJ & Správce</h2>
+
+      <div class="split-2">
+        <div>
+          <h3>Výbor SVJ</h3>
+          <ul class="kv">
+            <li><span>Předseda:</span> TN Facility s.r.o. (zast. Ing. Tomáš Pavel, jednatel)</li>
+            <li><span>Místopředseda:</span> Ing. Maria Bazhenova</li>
+            <li><span>Člen výboru:</span> Vladimír Šustr</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Správce domu</h3>
+          <ul class="kv">
+            <li><span>Společnost:</span> TN Facility s.r.o.</li>
+            <li><span>Adresa:</span> Kubánské nám. 1391/11 (GARDEN ELEVEN, 4. p.), 100 00 Praha 10</li>
+            <li><span>IČ:</span> 242 24 235</li>
+            <li><span>Web:</span> <a href="https://www.tnfacility.cz" target="_blank" rel="noopener">tnfacility.cz</a></li>
+            <li><span>Tel. kancelář:</span> +420 772 777 222</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakty -->
+    <section id="kontakty-sekce" class="panel">
+      <h2 class="section-title">Kontakty</h2>
+      <div class="split-2">
+        <div>
+          <h3>Administrativní záležitosti</h3>
+          <p><a href="mailto:ucetni@tnfacility.cz">ucetni@tnfacility.cz</a></p>
+        </div>
+        <div>
+          <h3>Technické záležitosti</h3>
+          <p><a href="mailto:info@tnfacility.cz">info@tnfacility.cz</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dokumenty -->
+    <section id="dokumenty-sekce" class="panel">
+      <h2 class="section-title">Dokumenty ke stažení</h2>
+      <ul class="docs">
+        <li><a href="docs/stanovy.pdf">Stanovy (PDF)</a></li>
+        <li><a href="docs/domovni-rad.pdf">Domovní řád (PDF)</a></li>
+        <!-- Přidej další odkazy podle nahraných souborů -->
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <div>
+        SVJ Na Padesátém 868/8 a 871/6 &nbsp;•&nbsp; Na Padesátém 868/8, 100 00 Praha 10
+        &nbsp;•&nbsp; <a href="mailto:svjnapadesatem@gmail.com">svjnapadesatem@gmail.com</a>
+      </div>
+      <div class="footer__links">
+        <a href="#">Ochrana osobních údajů</a>
+        <span>·</span>
+        <a href="#">Provozní řád</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // zavření menu po kliknutí na odkaz (mobil)
+    document.querySelectorAll('.navlinks a').forEach(a=>{
+      a.addEventListener('click', ()=> document.body.classList.remove('nav-open'));
+    });
+  </script>
+</body>
+</html>
