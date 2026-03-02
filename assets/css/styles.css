@@ -165,7 +165,15 @@ section[id]{ scroll-margin-top: 96px; }
 .docs li:last-child{ border-bottom:0; }
 
 /* ====== Rozdělení na dvě části ====== */
-.split-2{ display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
+.split-2{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 36px;     /* větší mezera mezi sloupci */
+  row-gap: 18px;
+
+  padding: 0 20px;      /* odsazení od okrajů panelu */
+}
+
 @media (max-width:900px){ .split-2{ grid-template-columns:1fr; } }
 
 /* ====== Patička ====== */
