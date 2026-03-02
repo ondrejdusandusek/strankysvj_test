@@ -98,7 +98,7 @@ section[id]{ scroll-margin-top: 96px; }
   min-height: 260px;
   background:
     radial-gradient(800px 300px at 80% 0%, rgba(88,166,255,.14), transparent 60%),
-    url("../img/hero.jpg") center/cover no-repeat,
+    url("../img/hero.png") center/cover no-repeat,
     linear-gradient(180deg, #0e141b, #0b0f14);
 }
 
