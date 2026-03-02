@@ -39,7 +39,7 @@ body::before{
     /* jemný akcent vpravo nahoře */
     radial-gradient(1100px 500px at 80% 0%, rgba(88,166,255,.14), transparent 55%),
     /* VLASTNÍ HERO OBRÁZEK přes celé pozadí */
-    url("../img/hero.jpg") center/cover no-repeat;
+    url("../img/hero.png") center/cover no-repeat;
   will-change: transform;
   backdrop-filter: none;
 }
