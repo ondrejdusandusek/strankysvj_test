@@ -187,3 +187,34 @@ section[id]{ scroll-margin-top: 96px; }
 .footer__links a{ color: var(--muted); }
 .footer__links a:hover{ color: var(--accent); text-decoration:none; }
 ``
+/* === Svislé mezery mezi sekcemi/panely === */
+
+/* 1) Jednotný svislý rozestup mezi panely (panel za panelem) */
+.panel + .panel {
+  margin-top: 22px;            /* nastav základní „volný prostor“ */
+}
+
+/* 2) Pokud jsou mezi sebou i jiné bloky (např. grid → panel),
+      zajistí „oddech“ pro panel, který následuje po gridu */
+.grid-2 + .panel,
+.grid-3 + .panel {
+  margin-top: 28px;            /* větší mezera pod gridem */
+}
+
+/* 3) Cíleně zvětši mezeru pro konkrétní sekce (volitelné) */
+#vybor {
+  margin-top: 28px;            /* svislá mezera nad sekcí Výbor SVJ & Správce */
+}
+#kontakty-sekce {
+  margin-top: 24px;            /* svislá mezera nad sekcí Kontakty */
+}
+
+/* 4) Na menších displejích klidně mezery o chlup zvětši,
+      ať má obsah víc „vzduchu“ */
+@media (max-width: 900px) {
+  .panel + .panel { margin-top: 26px; }
+  .grid-2 + .panel,
+  .grid-3 + .panel { margin-top: 32px; }
+  #vybor { margin-top: 32px; }
+  #kontakty-sekce { margin-top: 28px; }
+}
