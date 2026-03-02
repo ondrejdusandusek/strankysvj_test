@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SVJ Na Padesátém 868/8 a 871/6 – Oficiální stránky</title>
   <meta name="description" content="Vítejte na oficiálních stránkách SVJ pro dům Na Padesátém 868/8 a 871/6">
+
+  <!-- Font & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Horní tmavá navigace -->
+  <!-- Horní tmavá navigace (posunutá níž) -->
   <nav class="topbar">
     <div class="container topbar__inner">
-      <a href="#" class="brand" aria-label="SVJ domů">
+      <a class="brand" href="#uvod" aria-label="Domů – SVJ Na Padesátém 868/8 a 871/6">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M3 11.5L12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8z" stroke="#8cb9ff" stroke-width="1.5" fill="none"/>
         </svg>
@@ -29,15 +31,17 @@
 
       <div class="navlinks">
         <a href="#uvod">Úvod</a>
+        <a href="#novinky">Novinky</a>
         <a href="#info">Základní informace</a>
-        <a href="#dokumenty">Dokumenty</a>
-        <a href="#kontakty">Kontakty</a>
+        <a href="#dokumenty-sekce">Dokumenty</a>
+        <a href="#kontakty-sekce">Kontakty</a>
       </div>
     </div>
   </nav>
 
   <main class="container">
-    <!-- HERO (úvodní pás s titulkem a pravou fotkou) -->
+
+    <!-- HERO -->
     <section id="uvod" class="hero">
       <div class="hero__inner">
         <div class="hero__text">
@@ -48,19 +52,29 @@
       </div>
     </section>
 
-    <!-- Dvě sloupce: Aktuality + Základní informace -->
+    <!-- Dvě sloupce: Aktuality (zkráceně) + Základní informace -->
     <section class="grid-2">
       <div class="card">
         <h2 class="section-title">Aktuality (Nástěnka)</h2>
+
+        <!-- poslední novinky (2–3 kusy) -->
         <span class="badge">Novinka</span>
         <article class="post">
-          <h3><strong>Lorem ipsum oznámení — 1. 3. 2025</strong></h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id turpis laoreet bibendum.
-            Phasellus congue, metus vitae cursus gravida, urna lectus dictum nisl, quis malesuada sapien orci nec risus.
-            Integer eget nibh eget metus malesuada dictum.
-          </p>
+          <h3><strong>Odstávka vody – úterý 3. 3. 2026, 9:00–13:00</strong> <time>3. 3. 2026</time></h3>
+          <p>Krátkodobá odstávka kvůli opravě stoupačky v bloku B. Děkujeme za pochopení.</p>
         </article>
+
+        <article class="post">
+          <h3><strong>Shromáždění vlastníků – 15. 3. 2026, 18:00</strong> <time>28. 2. 2026</time></h3>
+          <p>Koná se ve společenské místnosti v přízemí. Program bude vyvěšen ve vchodě a na webu.</p>
+        </article>
+
+        <article class="post">
+          <h3><strong>Lorem ipsum oznámení</strong> <time>1. 3. 2025</time></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id turpis laoreet bibendum.</p>
+        </article>
+
+        <p><a class="btn" href="#novinky" aria-label="Zobrazit všechny novinky">Zobrazit všechny novinky →</a></p>
       </div>
 
       <aside id="info" class="panel">
@@ -76,9 +90,9 @@
       </aside>
     </section>
 
-    <!-- Tři akční karty: Dokumenty / Výbor & Správce / Kontakty -->
+    <!-- Akční karty -->
     <section class="grid-3 cards-row">
-      <a id="dokumenty" class="card card--action" href="#dokumenty-sekce">
+      <a class="card card--action" href="#dokumenty-sekce">
         <div class="icon">📄</div>
         <div>
           <h3>Dokumenty ke stažení</h3>
@@ -94,13 +108,33 @@
         </div>
       </a>
 
-      <a id="kontakty" class="card card--action" href="#kontakty-sekce">
+      <a class="card card--action" href="#kontakty-sekce">
         <div class="icon">☎️</div>
         <div>
           <h3>Kontakty</h3>
           <p>Administrativa a technické záležitosti.</p>
         </div>
       </a>
+    </section>
+
+    <!-- VŠECHNY NOVINKY -->
+    <section id="novinky" class="panel">
+      <h2 class="section-title">Všechny novinky</h2>
+
+      <article class="post">
+        <h3><strong>Odstávka vody – úterý 3. 3. 2026, 9:00–13:00</strong> <time>3. 3. 2026</time></h3>
+        <p>Krátkodobá odstávka kvůli opravě stoupačky v bloku B. Prosíme o zajištění zásoby vody.</p>
+      </article>
+
+      <article class="post">
+        <h3><strong>Shromáždění vlastníků – 15. 3. 2026, 18:00</strong> <time>28. 2. 2026</time></h3>
+        <p>Shromáždění proběhne ve společenské místnosti v přízemí. Program: zpráva o hospodaření, plán oprav, diskuse.</p>
+      </article>
+
+      <article class="post">
+        <h3><strong>Lorem ipsum oznámení</strong> <time>1. 3. 2025</time></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id turpis laoreet bibendum. Phasellus congue metus vitae cursus gravida.</p>
+      </article>
     </section>
 
     <!-- Výbor + Správce -->
@@ -120,7 +154,7 @@
         <div>
           <h3>Správce domu</h3>
           <ul class="kv">
-            <li><span>Společnost:</span> TN Facility s.r.o.</li>
+            <li><span>Společnost:</span> TN Facility s.r.r.o.</li>
             <li><span>Adresa:</span> Kubánské nám. 1391/11 (GARDEN ELEVEN, 4. p.), 100 00 Praha 10</li>
             <li><span>IČ:</span> 242 24 235</li>
             <li><span>Web:</span> <a href="https://www.tnfacility.cz" target="_blank" rel="noopener">tnfacility.cz</a></li>
@@ -149,8 +183,8 @@
     <section id="dokumenty-sekce" class="panel">
       <h2 class="section-title">Dokumenty ke stažení</h2>
       <ul class="docs">
-        <li><a href="docs/stanovy.pdf">Stanovy (PDF)</a></li>
-        <li><a href="docs/domovni-rad.pdf">Domovní řád (PDF)</a></li>
+        <li><a href="docs/stanovy.pdf" target="_blank" rel="noopener">Stanovy (PDF)</a></li>
+        <li><a href="docs/domovni-rad.pdf" target="_blank" rel="noopener">Domovní řád (PDF)</a></li>
         <!-- Přidej další odkazy podle nahraných souborů -->
       </ul>
     </section>
