@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dokumenty – SVJ Na Padesátém 868/8 a 871/6</title>
+
+  <!-- Font & CSS -->
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap
+  assets/css/styles.css
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <svg width="22" height="22" viewBox="0 0 24 24">
+          <path d="M3 11.5L12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8z"
+                stroke="#8cb9ff" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span>SVJ Na Padesátém 868/8 a 871/6</span>
+      </a>
+
+      <button class="burger" onclick="document.body.classList.toggle('nav-open')">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="navlinks">
+        <a href="index.html">Úvod</a>
+        <a href="novinky.html">Novinky</a>
+        <a href="dokumenty.html">Dokumenty</a>
+        <a href="index.html#info">Základní informace</a>
+        <a href="index.html#kontakty-sekce">Kontakty</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="container">
+
+    <section class="panel" style="margin-top:28px;">
+      <h1 class="section-title">Dokumenty ke stažení</h1>
+
+      <ul class="docs">
+        <li><a href="docs/stanovy.pdf" target="_blank">Stanovy (PDF)</a></li>
+        <li><a href="docs/domovni-rad.pdf" target="_blank">Domovní řád (PDF)</a></li>
+        <!-- můžeš doplnit další -->
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <div>
+        SVJ Na Padesátém 868/8 a 871/6 • Na Padesátém 868/8, 100 00 Praha 10 •
+        <a href="mailto:svjnapadesatem@gmail.com">svjnapadesatem@gmail.com</a>
+      </div>
+      <div class="footer__links">
+        <a href="#">Ochrana osobních údajů</a>
+        <span>·</span>
+        <a href="#">Provozní řád</a>
+      </div>
+    </footer>
+  </main>
+
+<script>
+  document.querySelectorAll('.navlinks a').forEach(a=>{
+    a.addEventListener('click',()=> document.body.classList.remove('nav-open'));
+  });
+</script>
+
+</body>
+</html>
