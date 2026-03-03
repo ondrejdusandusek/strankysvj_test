@@ -61,14 +61,14 @@ a:hover{ text-decoration: underline; }
   border-radius: 0;                 /* plná šířka */
   margin: 0;                        /* žádná mezera nad navem */
   box-shadow: var(--shadow);
-  padding-block: 14px;              /* vyšší topbar */
+  padding-block: 10px;              /*  topbar */
 }
 
 .topbar__inner{
   display:flex;
   align-items:center;               /* svislé centrování obsahu */
   justify-content:space-between;
-  min-height: 48px;
+  min-height: 40px;
   line-height: 1;
 }
 
@@ -249,7 +249,16 @@ section[id]{ scroll-margin-top: 96px; }
 }
 
 
+/* Sjednocená velikost a váha pro navigaci i brand */
+.topbar .brand span,
 .topbar .navlinks a {
   font-size: 1.45rem !important;
   font-weight: 600;
 }
+
+/* Ikonka domečku sjednocená s textem */
+.topbar .brand svg {
+  width: 1.45rem;
+  height: 1.45rem;
+}
+
