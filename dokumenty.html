@@ -13,7 +13,6 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="index.html">
@@ -24,8 +23,7 @@
         <span>SVJ Na Padesátém 868/8 a 871/6</span>
       </a>
 
-      <button class="burger"
-              onclick="document.body.classList.toggle('nav-open')">
+      <button class="burger" onclick="document.body.classList.toggle('nav-open')">
         <span></span><span></span><span></span>
       </button>
 
@@ -62,15 +60,13 @@
         <a href="#">Provozní řád</a>
       </div>
     </footer>
-
   </main>
 
-<script>
-  // Zavření menu po kliknutí na libovolný odkaz
-  document.querySelectorAll('.navlinks a').forEach(a => {
-    a.addEventListener('click', () => document.body.classList.remove('nav-open'));
-  });
-</script>
+  <script>
+    document.querySelectorAll('.navlinks a').forEach(a=>{
+      a.addEventListener('click',() => document.body.classList.remove('nav-open'));
+    });
+  </script>
 
 </body>
 </html>
