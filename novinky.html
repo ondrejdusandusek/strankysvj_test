@@ -14,29 +14,33 @@
 <body>
 
   <!-- NAV STEJNÁ JAKO NA INDEXU -->
-  <nav class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="index.html">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-          <path d="M3 11.5L12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8z"
-                stroke="#8cb9ff" stroke-width="1.5" fill="none"/>
-        </svg>
-        <span>SVJ Na Padesátém 868/8 a 871/6</span>
-      </a>
+<nav class="topbar">
+  <div class="container topbar__inner">
 
-      <button class="burger" onclick="document.body.classList.toggle('nav-open')">
-        <span></span><span></span><span></span>
-      </button>
+    <a class="brand" href="index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24">
+        <path d="M3 11.5L12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8z"
+              stroke="#8cb9ff" stroke-width="1.5" fill="none"/>
+      </svg>
+      <span>SVJ Na Padesátém 868/8 a 871/6</span>
+    </a>
 
-      <div class="navlinks">
-        <a href="index.html">Úvod</a>
-        <a href="novinky.html">Novinky</a>
-        <a href="dokumenty.html">Dokumenty</a>
-        <a href="index.html#info">Základní informace</a>
-        <a href="index.html#kontakty-sekce">Kontakty</a>
-      </div>
+    <button class="burger"
+            aria-label="Menu"
+            onclick="document.body.classList.toggle('nav-open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="navlinks">
+      <a href="index.html#uvod">Úvod</a>
+      <a href="novinky.html">Novinky</a>
+      <a href="dokumenty.html">Dokumenty</a>
+      <a href="index.html#info">Základní informace</a>
+      <a href="index.html#kontakty-sekce">Kontakty</a>
     </div>
-  </nav>
+
+  </div>
+</nav>
 
   <main class="container">
 
