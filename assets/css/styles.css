@@ -68,7 +68,7 @@ a:hover{ text-decoration: underline; }
   display:flex;
   align-items:center;               /* svislé centrování obsahu */
   justify-content:space-between;
-  min-height: 32px;
+  min-height: 26px;
   line-height: 1;
 }
 
@@ -255,6 +255,7 @@ section[id]{ scroll-margin-top: 96px; }
 .topbar .navlinks a {
   font-size: 1.4rem !important;  /* bylo 1.45rem */
   font-weight: 600;
+  line-height: 1.1;
 }
 
 /* Menší mezery mezi položkami menu, aby se vešly na jeden řádek */
