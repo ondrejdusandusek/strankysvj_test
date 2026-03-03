@@ -247,4 +247,9 @@ section[id]{ scroll-margin-top: 96px; }
   #vybor { margin-top: 32px; }
   #kontakty-sekce { margin-top: 28px; }
 }
-``
+
+
+.topbar .navlinks a {
+  font-size: 1.15rem !important;
+  font-weight: 600;
+}
