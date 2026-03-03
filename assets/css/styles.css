@@ -50,26 +50,28 @@ a:hover{ text-decoration: underline; }
 
 .container{ max-width:1100px; margin:0 auto; padding:0 16px 48px; }
 
-/* ====== Topbar (posun a perfektní svislé vycentrování obsahu) ====== */
+/* ====== Topbar ====== */
 .topbar{
   position: sticky;
-  top: calc(env(safe-area-inset-top, 0px) + 10px);
+  top: 0;                           /* přilepený úplně nahoře */
   z-index: 1000;
   background: var(--nav);
   border-bottom: 1px solid var(--border);
   backdrop-filter: saturate(120%) blur(6px);
-  border-radius: 10px;
-  margin: 0 8px;
+  border-radius: 0;                 /* plná šířka */
+  margin: 0;                        /* žádná mezera nad navem */
   box-shadow: var(--shadow);
-  padding-block: 10px; /* svislý vnitřní prostor */
+  padding-block: 14px;              /* vyšší topbar */
 }
+
 .topbar__inner{
   display:flex;
   align-items:center;               /* svislé centrování obsahu */
   justify-content:space-between;
-  min-height: 40px;
+  min-height: 48px;
   line-height: 1;
 }
+
 .brand{
   display:flex; align-items:center; gap:.6rem;
   color: var(--text); font-weight:700; letter-spacing:.2px;
@@ -77,9 +79,36 @@ a:hover{ text-decoration: underline; }
 }
 .brand:hover{ color: var(--accent); text-decoration:none; }
 
-.navlinks{ display:flex; gap:1rem; }
-.navlinks a{ color: var(--text); opacity:.9; line-height: 1; }
-.navlinks a:hover{ opacity:1; color: var(--accent); }
+/* ====== Navigace ====== */
+.navlinks{
+  display:flex;
+  gap:1.6rem;
+}
+
+/* základ navigačních odkazů */
+.navlinks a{
+  color: var(--text);
+  opacity:.9;
+  line-height: 1;
+  text-decoration:none;
+  padding-bottom: 4px;              /* místo pro „podtržení“ */
+  border-bottom: 2px solid transparent;
+  transition: color .15s ease, border-color .15s ease, opacity .15s ease;
+}
+
+/* HOVER efekt */
+.navlinks a:hover{
+  opacity:1;
+  color: var(--accent);
+  border-bottom-color: rgba(88,166,255,.55);
+}
+
+/* >>> AKTIVNÍ POLOŽKA NAVIGACE <<< */
+.navlinks a.active{
+  color: var(--accent);
+  opacity: 1;
+  border-bottom-color: var(--accent); /* pevné podtržení */
+}
 
 /* Burger (mobil) */
 .burger{
@@ -218,18 +247,4 @@ section[id]{ scroll-margin-top: 96px; }
   #vybor { margin-top: 32px; }
   #kontakty-sekce { margin-top: 28px; }
 }
-
-/* Fix – topbar přilepený úplně nahoru */
-.topbar{
-  position: sticky;
-  top: 0;
-  margin: 0;
-  border-radius: 0;
-}
-
-/* === Fix velikosti textu v navigaci === */
-.topbar .navlinks a {
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: 0.2px;   /* jen pro lepší čitelnost, můžeš vynechat */
-}
+``
