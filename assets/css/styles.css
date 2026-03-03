@@ -186,7 +186,7 @@ section[id]{ scroll-margin-top: 96px; }
 .footer__links{ display:flex; align-items:center; gap:8px; }
 .footer__links a{ color: var(--muted); }
 .footer__links a:hover{ color: var(--accent); text-decoration:none; }
-``
+
 /* === Svislé mezery mezi sekcemi/panely === */
 
 /* 1) Jednotný svislý rozestup mezi panely (panel za panelem) */
