@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Novinky – SVJ Na Padesátém 868/8 a 871/6</title>
 
-  <!-- Google Fonts -->
+  <!-- Font & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link href="assets/css/styles.css" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- NAV -->
@@ -20,7 +19,7 @@
     <div class="container topbar__inner">
 
       <a class="brand" href="index.html">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <svg width="22" height="22" viewBox="0 0 24 24">
           <path d="M3 11.5L12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8z"
                 stroke="#8cb9ff" stroke-width="1.5" fill="none"/>
         </svg>
@@ -57,7 +56,7 @@
           </h3>
           <span class="badge">Novinka</span>
         </div>
-        <p>Krátkodobá odstávka kvůli opravě stoupačky v bloku B. Prosíme o zajištění zásoby vody.</p>
+        <p>Krátkodobá odstávka kvůli opravě stoupačky v bloku B.</p>
       </article>
 
       <!-- NOVINKA 2 -->
@@ -69,7 +68,7 @@
           </h3>
           <span class="badge">Novinka</span>
         </div>
-        <p>Shromáždění proběhne ve společenské místnosti v přízemí. Program: zpráva o hospodaření, plán oprav, diskuse.</p>
+        <p>Shromáždění proběhne ve společenské místnosti v přízemí.</p>
       </article>
 
       <!-- STARŠÍ NOVINKA -->
@@ -81,7 +80,7 @@
           </h3>
           <span class="badge">Novinka</span>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id turpis laoreet bibendum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </article>
 
     </section>
@@ -113,7 +112,7 @@
 
       if (diff > 14) {
         const badge = post.querySelector('.badge');
-        if (badge) badge.style.display = 'none';
+        if (badge) badge.remove();
       }
     });
 
