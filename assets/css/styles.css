@@ -46,7 +46,10 @@ a:hover{ text-decoration: underline; }
   padding:0 16px 48px;
 }
 
-/* ====== TOPBAR ====== */
+/* ========================================================= */
+/* ======================= SLIM TOPBAR ====================== */
+/* ========================================================= */
+
 .topbar{
   position: sticky;
   top: 0;
@@ -54,17 +57,30 @@ a:hover{ text-decoration: underline; }
   background: var(--nav);
   border-bottom: 1px solid var(--border);
   backdrop-filter: saturate(120%) blur(6px);
-  border-radius: 0;
   margin: 0;
-  padding-block: 6px;
+  border-radius: 0;
+
+  /* SLIM lišta */
+  padding-top: 4px;
+  padding-bottom: 4px;
+
   box-shadow: var(--shadow);
 }
 
+/* Zruší nafukování topbaru */
+.topbar .container{
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Výška topbaru = ~28px (perfektní pro 1.4rem font) */
 .topbar__inner{
   display:flex;
-  align-items:center;  
+  align-items:center;      /* vertikální střed */
   justify-content:space-between;
-  min-height: 30px;
+  min-height: 28px;        /* SLIM výška */
   line-height: 1;
 }
 
@@ -75,42 +91,41 @@ a:hover{ text-decoration: underline; }
   gap:.6rem;
   color: var(--text);
   font-weight:700;
-  letter-spacing:.2px;
 }
 
 .topbar .brand svg{
   width: 1.4rem;
   height: 1.4rem;
-  margin-top: -2px;
+  margin-top: -1px;        /* dokonalé zarovnání ikonky */
 }
 
+/* VELIKOST TEXTU – sjednocení */
 .topbar .brand span,
 .topbar .navlinks a{
   font-size: 1.4rem !important;
   font-weight: 600;
   line-height: 1;
   display:flex;
-  align-items:center;
+  align-items:center;      /* text přesně uprostřed */
 }
 
 /* Navigace */
 .navlinks{
   display:flex;
-  gap: 1rem;
+  gap: 1rem;               /* aby vše bylo v jednom řádku */
 }
 
 .navlinks a{
   color: var(--text);
   opacity:.9;
-  text-decoration:none;
   padding-bottom:3px;
   border-bottom:2px solid transparent;
   transition: color .15s ease, border-color .15s ease;
 }
 
 .navlinks a:hover{
-  opacity:1;
   color: var(--accent);
+  opacity:1;
   border-bottom-color: rgba(88,166,255,.55);
 }
 
@@ -119,7 +134,10 @@ a:hover{ text-decoration: underline; }
   border-bottom-color: var(--accent);
 }
 
-/* Mobilní burger */
+/* ========================================================= */
+/* ====================== MOBILE MENU ======================= */
+/* ========================================================= */
+
 .burger{
   display:none;
   background:transparent;
@@ -138,6 +156,7 @@ a:hover{ text-decoration: underline; }
 
 @media(max-width:820px){
   .burger{ display:block; }
+
   .navlinks{
     display:none;
     flex-direction:column;
@@ -151,6 +170,7 @@ a:hover{ text-decoration: underline; }
     padding:10px 12px;
     box-shadow: var(--shadow);
   }
+
   body.nav-open .navlinks{ display:flex; }
 }
 
@@ -207,17 +227,6 @@ section[id]{ scroll-margin-top: 96px; }
   gap:12px;
 }
 
-/* Tlačítko */
-.btn{
-  background:#18314f;
-  color:#cfe7ff;
-  border:1px solid #2e4666;
-  padding:9px 14px;
-  border-radius:10px;
-  font-weight:600;
-}
-.btn:hover{ background:#1f3d63; }
-
 /* ====== Footer ====== */
 .footer{
   margin-top:28px;
@@ -242,3 +251,4 @@ section[id]{ scroll-margin-top: 96px; }
   .grid-2 + .panel,
   .grid-3 + .panel{ margin-top:32px; }
 }
+``
