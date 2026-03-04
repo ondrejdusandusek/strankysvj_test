@@ -6,62 +6,79 @@
   <title>Novinky – SVJ Na Padesátém 868/8 a 871/6</title>
 
   <!-- Font & CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="assets/css/styles.css" rel="stylesheet">
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap
+  assets/css/styles.css
 </head>
 <body>
 
-  <!-- NAV STEJNÁ JAKO NA INDEXU -->
-<nav class="topbar">
-  <div class="container topbar__inner">
+  <!-- NAV -->
+  <nav class="topbar">
+    <div class="container topbar__inner">
 
-    <a class="brand" href="index.html">
-      <svg width="22" height="22" viewBox="0 0 24 24">
-        <path d="M3 11.5L12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8z"
-              stroke="#8cb9ff" stroke-width="1.5" fill="none"/>
-      </svg>
-      <span>SVJ Na Padesátém 868/8 a 871/6</span>
-    </a>
+      index.html
+        <svg width="22" height="22" viewBox="0 0 24 24">
+          <path d="M3 11.5L12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8z"
+                stroke="#8cb9ff" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span>SVJ Na Padesátém 868/8 a 871/6</span>
+      </a>
 
-    <button class="burger"
-            aria-label="Menu"
-            onclick="document.body.classList.toggle('nav-open')">
-      <span></span><span></span><span></span>
-    </button>
+      <button class="burger" aria-label="Menu"
+              onclick="document.body.classList.toggle('nav-open')">
+        <span></span><span></span><span></span>
+      </button>
 
+      <div class="navlinks">
+        index.html#uvodÚvod</a>
+        novinky.htmlNovinky</a>
+        dokumenty.htmlDokumenty</a>
+        index.html#infoZákladní informace</a>
+        index.html#kontakty-sekceKontakty</a>
+      </div>
 
-<div class="navlinks">
-  <a href="index.html#uvod">Úvod</a>
-  <a href="novinky.html" class="active">Novinky</a>
-  <a href="dokumenty.html">Dokumenty</a>
-  <a href="index.html#info">Základní informace</a>
-  <a href="index.html#kontakty-sekce">Kontakty</a>
-</div>
-
-
-  </div>
-</nav>
+    </div>
+  </nav>
 
   <main class="container">
 
     <section class="panel" style="margin-top:28px;">
       <h1 class="section-title">Novinky</h1>
 
-      <article class="post">
-        <span class="badge">Novinka</span>
-        <h3><strong>Odstávka vody – úterý 3. 3. 2026, 9:00–13:00</strong> <time>3. 3. 2026</time></h3>
+      <!-- Novinka 1 (má badge) -->
+      <article class="post" data-date="2026-03-03">
+        <div class="post-header">
+          <h3>
+            <strong>Odstávka vody – úterý 3. 3. 2026, 9:00–13:00</strong>
+            <time>2026-03-03</time>
+          </h3>
+          <span class="badge">Novinka</span>
+        </div>
         <p>Krátkodobá odstávka kvůli opravě stoupačky v bloku B. Prosíme o zajištění zásoby vody.</p>
       </article>
 
-      <article class="post">
-        <h3><strong>Shromáždění vlastníků – 15. 3. 2026, 18:00</strong> <time>28. 2. 2026</time></h3>
+      <!-- Novinka 2 -->
+      <article class="post" data-date="2026-02-28">
+        <div class="post-header">
+          <h3>
+            <strong>Shromáždění vlastníků – 15. 3. 2026, 18:00</strong>
+            <time>2026-02-28</time>
+          </h3>
+          <span class="badge">Novinka</span>
+        </div>
         <p>Shromáždění proběhne ve společenské místnosti v přízemí. Program: zpráva o hospodaření, plán oprav, diskuse.</p>
       </article>
 
-      <article class="post">
-        <h3><strong>Lorem ipsum oznámení</strong> <time>1. 3. 2025</time></h3>
+      <!-- Novinka 3 (už není novinka - bude automaticky bez badge) -->
+      <article class="post" data-date="2025-03-01">
+        <div class="post-header">
+          <h3>
+            <strong>Lorem ipsum oznámení</strong>
+            <time>2025-03-01</time>
+          </h3>
+          <span class="badge">Novinka</span>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae magna id turpis laoreet bibendum.</p>
       </article>
 
@@ -70,19 +87,37 @@
     <footer class="footer">
       <div>
         SVJ Na Padesátém 868/8 a 871/6 • Na Padesátém 868/8, 100 00 Praha 10 •
-        <a href="mailto:svjnapadesatem@gmail.com">svjnapadesatem@gmail.com</a>
+        mailto:svjnapadesatem@gmail.comsvjnapadesatem@gmail.com</a>
       </div>
       <div class="footer__links">
-        <a href="#">Ochrana osobních údajů</a>
+        #Ochrana osobních údajů</a>
         <span>·</span>
-        <a href="#">Provozní řád</a>
+        #Provozní řád</a>
       </div>
     </footer>
+
   </main>
 
+  <!-- Skript: automaticky skrývá badge starší než 14 dní -->
   <script>
+    const today = new Date();
+
+    document.querySelectorAll('.post').forEach(post => {
+      const dateString = post.getAttribute('data-date');
+      if (!dateString) return;
+
+      const postDate = new Date(dateString);
+      const diff = (today - postDate) / (1000 * 60 * 60 * 24); // rozdíl ve dnech
+
+      if (diff > 14) {
+        const badge = post.querySelector('.badge');
+        if (badge) badge.style.display = 'none';
+      }
+    });
+
+    // zavření mobilního menu
     document.querySelectorAll('.navlinks a').forEach(a=>{
-      a.addEventListener('click',() => document.body.classList.remove('nav-open'));
+      a.addEventListener('click',()=> document.body.classList.remove('nav-open'));
     });
   </script>
 
